@@ -1,0 +1,72 @@
+.left-display {
+  width: 20%;
+  min-width: 230px;
+  padding: 1%;
+  display: inline-block;
+  vertical-align: bottom;
+  height: 13em;
+  background-color: floralwhite;
+  border: solid thin;
+  text-align: center;
+}
+
+input {
+  width: 40%;
+}
+
+button {
+  cursor: pointer;
+}
+
+form span {
+  color: red;
+  display: block;
+}
+.disabled {
+  opacity: 0.5;
+}
+
+#placebet {
+  cursor: pointer;
+  background-color: tomato;
+  color: white;
+  padding: 3%;
+  width: 200px;
+  font-size: 1em;
+  margin-top: 2%;
+}
+
+#total {
+  margin-top: 2%;
+}
+
+.ballscontainer {
+  width: 100%;
+  min-height: 5.3em;
+  vertical-align: middle;
+  margin-bottom: 4%;
+  text-align: center;
+}
+
+.ballscontainer li {
+  display: inline-block;
+  cursor: pointer;
+  border: solid thin gray;
+  text-align: center;
+  margin: 1px;
+  font-weight: bold;
+  height: 2em;
+  font-size: 1.2em;
+  text-align: center;
+  width: 2em;
+  border-radius: 2em;
+  -moz-border-radius: 2em;
+  -webkit-border-radius: 2em;
+  background-color: gray;
+  line-height: 2em;
+  color: white;
+}
+
+.bet {
+  text-align: center;
+}

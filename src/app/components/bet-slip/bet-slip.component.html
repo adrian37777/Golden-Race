@@ -1,0 +1,30 @@
+<div class="left-display">
+  <div class="ballscontainer">
+    <li
+      *ngFor="let ball of selectedBalls; trackBy: trackByfn"
+      [ngStyle]="{ 'background-color': ball.color }"
+    >
+      {{ ball.id }}
+    </li>
+  </div>
+  <form [formGroup]="betForm">
+    <input type="number" formControlName="bet" [(ngModel)]="bet" />
+    <span *ngIf="betForm.controls['bet'].errors?.min">Min. bet is 5€</span>
+    <div id="total">Total {{ selectedBalls.length * bet * 1.5 }}</div>
+
+    <button
+      id="placebet"
+      type="submit"
+      [class.disabled]="!betForm.valid"
+      [disabled]="!betForm.valid"
+      (click)="placeBet()"
+    >
+      Place Bet
+    </button>
+  </form>
+</div>
+<app-message
+  *ngIf="showResults"
+  [number]="result"
+  (restart)="restartGame()"
+></app-message>

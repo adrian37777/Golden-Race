@@ -1,0 +1,46 @@
+.message {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0%;
+  background-color: rgba(3, 1, 1, 0.767);
+  height: 10em;
+  padding-top: 10%;
+  text-align: center;
+  color: white;
+  padding: 2%;
+  font-weight: bold;
+  font-size: 1.5em;
+  height: 100%;
+}
+
+.restart{
+  cursor: pointer;
+  background-color:darkred;
+  color: white;
+  padding: 3%;
+  width: 100px;
+  font-size: 0.5emem;
+  margin-top: 2%;
+
+}
+
+.ballWinner {
+  width: 1em;
+  height: 1em;
+  font-size: 1em;
+  margin: 11px auto;
+  padding: 1%;
+}
+
+.contentMenssage {
+  width: 200px;
+  margin: 0 auto;
+  border: solid thin;
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 32%;
+}

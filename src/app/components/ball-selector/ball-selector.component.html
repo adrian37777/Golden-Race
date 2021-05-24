@@ -1,0 +1,15 @@
+<div class="right-display">
+  <h3>Numbers</h3>
+  <ul class="ballscontent">
+    <li
+      *ngFor="let ball of balls; trackBy: trackByfn"
+      [class.selected]="ball.selected"
+      [ngStyle]="{ 'background-color': ball.color }"
+      (click)="onSelect(ball)"
+    >
+      {{ ball.id }}
+    </li>
+  </ul>
+
+  <button (click)="remove()">Clear selection</button>
+</div>
