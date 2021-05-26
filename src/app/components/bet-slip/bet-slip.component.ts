@@ -22,7 +22,7 @@ export class BetSlipComponent implements OnInit {
 
   constructor(private ballservice: BallserviceService) {}
 
-  // subscribe observable
+  // Balls selected
 
   ngOnInit() {
     this.subscriptions.add(
