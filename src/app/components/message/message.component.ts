@@ -34,7 +34,7 @@ export class MessageComponent implements OnInit {
     this.message = isWinner ? 'You Win' : 'You Lost';
   }
 
-  // restar Game
+  // restart Game
   public restartGame() {
     this.restart.emit();
   }
